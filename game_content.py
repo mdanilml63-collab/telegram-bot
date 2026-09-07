@@ -1076,8 +1076,13 @@ FISHING_LOOT_TABLE = {
     },
     'tier5': {  # Уровень 80+
         'common': [
-            {'name': 'Осколок грез', 'base_xp': 1850, 'base_price': 60}, # было 100
-            {'name': 'Эхо бездны', 'base_xp': 1900, 'base_price': 70}, # было 120
+            {'name': 'Осколок грез', 'base_xp': 1850, 'base_price': 60},
+            {'name': 'Эхо бездны', 'base_xp': 1900, 'base_price': 70},
+            {'name': 'Теневой сом', 'base_xp': 1880, 'base_price': 65},
+            {'name': 'Призрачная форель', 'base_xp': 1950, 'base_price': 72},
+            {'name': 'Космический окунь', 'base_xp': 1920, 'base_price': 68},
+            {'name': 'Астральная плотва', 'base_xp': 1980, 'base_price': 75},
+            {'name': 'Галактический лещ', 'base_xp': 2000, 'base_price': 78},
         ],
         'uncommon': [
             {'name': 'Космический скат Создателя', 'base_xp': 950, 'base_price': 120}, # было 200
