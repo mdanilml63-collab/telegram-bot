@@ -27,7 +27,7 @@ BOSS_TEMPLATES = [
 ]
 
 BOSS_EVENT_DURATION = 24 * 60 * 60  # 24 часа в секундах
-PLAYER_COOLDOWN = 4 * 60 * 60     # 4 часа в секундах
+PLAYER_COOLDOWN = 2 * 60 * 60     # 2 часа в секундах
 MOSCOW_TZ = pytz.timezone('Europe/Moscow')
 
 def get_boss_status(user_id):
