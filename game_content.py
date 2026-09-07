@@ -954,8 +954,8 @@ FISHING_BAITS = {
 }
 
 FISHING_LOOT_TABLE = {
-    'tier1': { # Уровень 0+
-        'common': [ # 60% шанс
+    'tier1': {  # Уровень 0+
+        'common': [  # 60% шанс
             {'name': 'Грязный ботинок', 'base_xp': 30, 'base_price': 1},
             {'name': 'Ржавая жестянка', 'base_xp': 30, 'base_price': 1},
             {'name': 'Морской слизень', 'base_xp': 40, 'base_price': 3},
