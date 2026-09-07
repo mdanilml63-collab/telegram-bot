@@ -22,7 +22,7 @@ BOSS_TEMPLATES = [
     },
     {
         'name': "Пылающий Колосс",
-        'stats': {'health': 8000, 'max_health': 8000, 'attack': 50, 'defense': 25, 'block_chance': 5, 'dodge_chance': 10, 'crit_chance': 15}
+        'stats': {'health': 4500, 'max_health': 4500, 'attack': 50, 'defense': 25, 'block_chance': 5, 'dodge_chance': 10, 'crit_chance': 15}
     }
 ]
 
