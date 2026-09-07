@@ -960,9 +960,14 @@ FISHING_LOOT_TABLE = {
             {'name': 'Ржавая жестянка', 'base_xp': 30, 'base_price': 1},
             {'name': 'Морской слизень', 'base_xp': 40, 'base_price': 1}, # было 2
         ],
-        'uncommon': [ # 25% шанс
-            {'name': 'Прибрежный бычок', 'base_xp': 50, 'base_price': 2}, # было 3
-            {'name': 'Пещерный рак', 'base_xp': 55, 'base_price': 2}, # было 4
+        'uncommon': [  # 25% шанс
+            {'name': 'Прибрежный бычок', 'base_xp': 50, 'base_price': 2},
+            {'name': 'Пещерный рак', 'base_xp': 55, 'base_price': 2},
+            {'name': 'Тростниковая щука', 'base_xp': 60, 'base_price': 3},
+            {'name': 'Каменный окунь', 'base_xp': 65, 'base_price': 3},
+            {'name': 'Илистый угорь', 'base_xp': 70, 'base_price': 3},
+            {'name': 'Ракушечный карп', 'base_xp': 58, 'base_price': 2},
+            {'name': 'Болотная черепаха', 'base_xp': 75, 'base_price': 4},
         ],
         'rare': [  # 15% шанс
             {'name': 'Карп Роа', 'base_xp': 120, 'base_price': 3},
