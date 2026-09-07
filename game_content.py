@@ -1085,8 +1085,13 @@ FISHING_LOOT_TABLE = {
             {'name': 'Галактический лещ', 'base_xp': 2000, 'base_price': 78},
         ],
         'uncommon': [
-            {'name': 'Космический скат Создателя', 'base_xp': 950, 'base_price': 120}, # было 200
-            {'name': 'Кристалл Древнего', 'base_xp': 3000, 'base_price': 120}, # было 200
+            {'name': 'Космический скат Создателя', 'base_xp': 950, 'base_price': 120},
+            {'name': 'Кристалл Древнего', 'base_xp': 3000, 'base_price': 120},
+            {'name': 'Первозданный тунец', 'base_xp': 2800, 'base_price': 130},
+            {'name': 'Древний осетр-долгожитель', 'base_xp': 2900, 'base_price': 125},
+            {'name': 'Звездный скат', 'base_xp': 3100, 'base_price': 135},
+            {'name': 'Временной угорь', 'base_xp': 2850, 'base_price': 128},
+            {'name': 'Пространственный марлин', 'base_xp': 3200, 'base_price': 140},
         ],
         'rare': [
             {'name': 'Сердце Пробудителя', 'base_xp': 4000, 'base_price': 250}, # было 400
