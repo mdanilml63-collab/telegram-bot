@@ -1007,8 +1007,13 @@ FISHING_LOOT_TABLE = {
             {'name': 'Феникс-рыба', 'base_xp': 1620, 'base_price': 50}, # было 70
         ],
         'rare': [
-            {'name': 'Рыба-химера', 'base_xp': 2020, 'base_price': 80}, # было 120
-            {'name': 'Рыба-минотавр', 'base_xp': 2040, 'base_price': 80}, # было 120
+            {'name': 'Рыба-химера', 'base_xp': 2020, 'base_price': 80},
+            {'name': 'Рыба-минотавр', 'base_xp': 2040, 'base_price': 80},
+            {'name': 'Грифон-рыба', 'base_xp': 2100, 'base_price': 85},
+            {'name': 'Кракен-младший', 'base_xp': 2150, 'base_price': 90},
+            {'name': 'Василиск-рыба', 'base_xp': 2080, 'base_price': 82},
+            {'name': 'Феникс-акула', 'base_xp': 2200, 'base_price': 95},
+            {'name': 'Легендарный морской змей', 'base_xp': 2250, 'base_price': 100},
         ],
         'special': [
             {'name': 'Затонувший сундук', 'type': 'treasure_chest'}
