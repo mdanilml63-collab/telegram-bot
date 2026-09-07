@@ -979,8 +979,13 @@ FISHING_LOOT_TABLE = {
             {'name': 'Самоцветный окунь', 'base_xp': 260, 'base_price': 6}, # было 9
         ],
         'rare': [
-            {'name': 'Vaal-овый угорь', 'base_xp': 600, 'base_price': 15}, # было 20
-            {'name': 'Солнечный лещ', 'base_xp': 580, 'base_price': 20}, # было 35
+            {'name': 'Vaal-овый угорь', 'base_xp': 600, 'base_price': 15},
+            {'name': 'Солнечный лещ', 'base_xp': 580, 'base_price': 20},
+            {'name': 'Кровавая форель', 'base_xp': 620, 'base_price': 18},
+            {'name': 'Небесный скат', 'base_xp': 640, 'base_price': 20},
+            {'name': 'Огненный окунь', 'base_xp': 660, 'base_price': 22},
+            {'name': 'Ледяная щука', 'base_xp': 590, 'base_price': 17},
+            {'name': 'Грозовой угорь', 'base_xp': 700, 'base_price': 25},
         ]
     },
     'tier3': { # Уровень 40+
