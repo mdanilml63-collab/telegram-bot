@@ -964,9 +964,14 @@ FISHING_LOOT_TABLE = {
             {'name': 'Прибрежный бычок', 'base_xp': 50, 'base_price': 2}, # было 3
             {'name': 'Пещерный рак', 'base_xp': 55, 'base_price': 2}, # было 4
         ],
-        'rare': [ # 15% шанс
-            {'name': 'Карп Роа', 'base_xp': 120, 'base_price': 3}, # было 5
-            {'name': 'Призрачная креветка', 'base_xp': 150, 'base_price': 4}, # было 6
+        'rare': [  # 15% шанс
+            {'name': 'Карп Роа', 'base_xp': 120, 'base_price': 3},
+            {'name': 'Призрачная креветка', 'base_xp': 150, 'base_price': 4},
+            {'name': 'Золотой карась', 'base_xp': 130, 'base_price': 5},
+            {'name': 'Жемчужная мидия', 'base_xp': 140, 'base_price': 4},
+            {'name': 'Алмазный голец', 'base_xp': 160, 'base_price': 5},
+            {'name': 'Бронзовый сом', 'base_xp': 135, 'base_price': 4},
+            {'name': 'Лунный окунь-кроха', 'base_xp': 170, 'base_price': 6},
         ]
     },
     'tier2': {  # Уровень 20+
