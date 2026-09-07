@@ -14,7 +14,7 @@ from utils import escape_markdown
 BOSS_TEMPLATES = [
     {
         'name': "Пожиратель Миров",
-        'stats': {'health': 8500, 'max_health': 8500, 'attack': 45, 'defense': 25, 'block_chance': 10, 'dodge_chance': 10, 'crit_chance': 10}
+        'stats': {'health': 4500, 'max_health': 4500, 'attack': 45, 'defense': 25, 'block_chance': 10, 'dodge_chance': 10, 'crit_chance': 10}
     },
     {
         'name': "Древний Ужас из Глубин",
