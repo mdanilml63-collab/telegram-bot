@@ -1003,8 +1003,13 @@ FISHING_LOOT_TABLE = {
             {'name': 'Пустотная пикша', 'base_xp': 1400, 'base_price': 30}, # было 50
         ],
         'uncommon': [
-            {'name': 'Рыба-гидра', 'base_xp': 1500, 'base_price': 50}, # было 70
-            {'name': 'Феникс-рыба', 'base_xp': 1620, 'base_price': 50}, # было 70
+            {'name': 'Рыба-гидра', 'base_xp': 1500, 'base_price': 50},
+            {'name': 'Феникс-рыба', 'base_xp': 1620, 'base_price': 50},
+            {'name': 'Теневой лосось', 'base_xp': 1550, 'base_price': 55},
+            {'name': 'Кровавый тунец', 'base_xp': 1600, 'base_price': 52},
+            {'name': 'Эфирный скат', 'base_xp': 1650, 'base_price': 58},
+            {'name': 'Астральный окунь', 'base_xp': 1580, 'base_price': 53},
+            {'name': 'Древний осетр', 'base_xp': 1700, 'base_price': 60},
         ],
         'rare': [
             {'name': 'Рыба-химера', 'base_xp': 2020, 'base_price': 80},
