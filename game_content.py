@@ -1074,7 +1074,7 @@ FISHING_LOOT_TABLE = {
             {'name': 'Затонувший сундук', 'type': 'treasure_chest'}
         ]
     },
-    'tier5': { # Уровень 80+
+    'tier5': {  # Уровень 80+
         'common': [
             {'name': 'Осколок грез', 'base_xp': 1850, 'base_price': 60}, # было 100
             {'name': 'Эхо бездны', 'base_xp': 1900, 'base_price': 70}, # было 120
