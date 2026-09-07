@@ -18,7 +18,7 @@ BOSS_TEMPLATES = [
     },
     {
         'name': "Древний Ужас из Глубин",
-        'stats': {'health': 9000, 'max_health': 9000, 'attack': 40, 'defense': 25, 'block_chance': 15, 'dodge_chance': 5, 'crit_chance': 10}
+        'stats': {'health': 4500, 'max_health': 4500, 'attack': 40, 'defense': 25, 'block_chance': 15, 'dodge_chance': 5, 'crit_chance': 10}
     },
     {
         'name': "Пылающий Колосс",
