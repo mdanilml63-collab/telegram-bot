@@ -993,8 +993,13 @@ FISHING_LOOT_TABLE = {
             {'name': 'Кровавый карп Китавы', 'base_xp': 1020, 'base_price': 20}, # было 30
         ],
         'rare': [
-            {'name': 'Огненный лосось Невинности', 'base_xp': 1800, 'base_price': 35}, # было 50
-            {'name': 'Сумрачный тунец', 'base_xp': 1950, 'base_price': 35}, # было 50
+            {'name': 'Огненный лосось Невинности', 'base_xp': 1800, 'base_price': 35},
+            {'name': 'Сумрачный тунец', 'base_xp': 1950, 'base_price': 35},
+            {'name': 'Драконий морской конек', 'base_xp': 1850, 'base_price': 40},
+            {'name': 'Фантомная акула', 'base_xp': 2000, 'base_price': 42},
+            {'name': 'Золотая мурена', 'base_xp': 1900, 'base_price': 38},
+            {'name': 'Кристальный скат', 'base_xp': 2050, 'base_price': 45},
+            {'name': 'Пламенный окунь', 'base_xp': 2100, 'base_price': 48},
         ]
     },
     'tier4': { # Уровень 60+
