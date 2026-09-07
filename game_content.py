@@ -989,8 +989,13 @@ FISHING_LOOT_TABLE = {
             {'name': 'Каменный краб', 'base_xp': 660, 'base_price': 12}, # было 20
         ],
         'uncommon': [
-            {'name': 'Боевая рыба Тукохамы', 'base_xp': 920, 'base_price': 20}, # было 30
-            {'name': 'Кровавый карп Китавы', 'base_xp': 1020, 'base_price': 20}, # было 30
+            {'name': 'Боевая рыба Тукохамы', 'base_xp': 920, 'base_price': 20},
+            {'name': 'Кровавый карп Китавы', 'base_xp': 1020, 'base_price': 20},
+            {'name': 'Изумрудный марлин', 'base_xp': 950, 'base_price': 22},
+            {'name': 'Теневой окунь', 'base_xp': 980, 'base_price': 23},
+            {'name': 'Радужная форель', 'base_xp': 1050, 'base_price': 25},
+            {'name': 'Сапфировый тунец', 'base_xp': 1000, 'base_price': 22},
+            {'name': 'Янтарный скат', 'base_xp': 1100, 'base_price': 28},
         ],
         'rare': [
             {'name': 'Огненный лосось Невинности', 'base_xp': 1800, 'base_price': 35},
