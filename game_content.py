@@ -971,8 +971,13 @@ FISHING_LOOT_TABLE = {
     },
     'tier2': { # Уровень 20+
         'common': [
-            {'name': 'Сарнская плотва', 'base_xp': 150, 'base_price': 3}, # было 5
-            {'name': 'Канальный сом', 'base_xp': 170, 'base_price': 3}, # было 5
+            {'name': 'Сарнская плотва', 'base_xp': 150, 'base_price': 3},
+            {'name': 'Канальный сом', 'base_xp': 170, 'base_price': 3},
+            {'name': 'Речная форель', 'base_xp': 160, 'base_price': 4},
+            {'name': 'Озёрная ряпушка', 'base_xp': 155, 'base_price': 3},
+            {'name': 'Песчаный лещ', 'base_xp': 180, 'base_price': 4},
+            {'name': 'Тенистый сиг', 'base_xp': 165, 'base_price': 4},
+            {'name': 'Белый амур', 'base_xp': 175, 'base_price': 3},
         ],
         'uncommon': [
             {'name': 'Черный страж', 'base_xp': 240, 'base_price': 6},
