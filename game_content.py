@@ -1042,7 +1042,7 @@ FISHING_LOOT_TABLE = {
             {'name': 'Пламенный окунь', 'base_xp': 2100, 'base_price': 48},
         ]
     },
-    'tier4': { # Уровень 60+
+    'tier4': {  # Уровень 60+
         'common': [
             {'name': 'Атласная треска', 'base_xp': 1300, 'base_price': 30},
             {'name': 'Пустотная пикша', 'base_xp': 1400, 'base_price': 30},
