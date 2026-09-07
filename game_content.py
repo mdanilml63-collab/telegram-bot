@@ -999,8 +999,13 @@ FISHING_LOOT_TABLE = {
     },
     'tier4': { # Уровень 60+
         'common': [
-            {'name': 'Атласная треска', 'base_xp': 1300, 'base_price': 30}, # было 50
-            {'name': 'Пустотная пикша', 'base_xp': 1400, 'base_price': 30}, # было 50
+            {'name': 'Атласная треска', 'base_xp': 1300, 'base_price': 30},
+            {'name': 'Пустотная пикша', 'base_xp': 1400, 'base_price': 30},
+            {'name': 'Глубинная камбала', 'base_xp': 1350, 'base_price': 32},
+            {'name': 'Темный палтус', 'base_xp': 1450, 'base_price': 33},
+            {'name': 'Холодный морской окунь', 'base_xp': 1380, 'base_price': 31},
+            {'name': 'Ледяная треска', 'base_xp': 1420, 'base_price': 32},
+            {'name': 'Полярная пикша', 'base_xp': 1500, 'base_price': 35},
         ],
         'uncommon': [
             {'name': 'Рыба-гидра', 'base_xp': 1500, 'base_price': 50},
