@@ -969,7 +969,7 @@ FISHING_LOOT_TABLE = {
             {'name': 'Призрачная креветка', 'base_xp': 150, 'base_price': 4}, # было 6
         ]
     },
-    'tier2': { # Уровень 20+
+    'tier2': {  # Уровень 20+
         'common': [
             {'name': 'Сарнская плотва', 'base_xp': 150, 'base_price': 3},
             {'name': 'Канальный сом', 'base_xp': 170, 'base_price': 3},
