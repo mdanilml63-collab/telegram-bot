@@ -985,8 +985,13 @@ FISHING_LOOT_TABLE = {
     },
     'tier3': { # Уровень 40+
         'common': [
-            {'name': 'Горный голец', 'base_xp': 610, 'base_price': 12}, # было 20
-            {'name': 'Каменный краб', 'base_xp': 660, 'base_price': 12}, # было 20
+            {'name': 'Горный голец', 'base_xp': 610, 'base_price': 12},
+            {'name': 'Каменный краб', 'base_xp': 660, 'base_price': 12},
+            {'name': 'Глубинный окунь', 'base_xp': 630, 'base_price': 13},
+            {'name': 'Скальный морской ерш', 'base_xp': 650, 'base_price': 13},
+            {'name': 'Пещера рыба-капля', 'base_xp': 680, 'base_price': 14},
+            {'name': 'Вулканический бычок', 'base_xp': 640, 'base_price': 12},
+            {'name': 'Черный палтус', 'base_xp': 700, 'base_price': 15},
         ],
         'uncommon': [
             {'name': 'Боевая рыба Тукохамы', 'base_xp': 920, 'base_price': 20},
