@@ -975,8 +975,13 @@ FISHING_LOOT_TABLE = {
             {'name': 'Канальный сом', 'base_xp': 170, 'base_price': 3}, # было 5
         ],
         'uncommon': [
-            {'name': 'Черный страж', 'base_xp': 240, 'base_price': 6}, # было 8
-            {'name': 'Самоцветный окунь', 'base_xp': 260, 'base_price': 6}, # было 9
+            {'name': 'Черный страж', 'base_xp': 240, 'base_price': 6},
+            {'name': 'Самоцветный окунь', 'base_xp': 260, 'base_price': 6},
+            {'name': 'Королевский лосось', 'base_xp': 280, 'base_price': 8},
+            {'name': 'Изумрудный карп', 'base_xp': 250, 'base_price': 7},
+            {'name': 'Полосатый тунец', 'base_xp': 290, 'base_price': 8},
+            {'name': 'Жемчужная скумбрия', 'base_xp': 270, 'base_price': 7},
+            {'name': 'Рыба-лист', 'base_xp': 300, 'base_price': 9},
         ],
         'rare': [
             {'name': 'Vaal-овый угорь', 'base_xp': 600, 'base_price': 15},
