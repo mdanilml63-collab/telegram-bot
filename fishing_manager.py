@@ -12,7 +12,7 @@ from shared_data import USER_ACTION_LOCK
 from utils import escape_markdown
 import harvest_manager
 
-FISHING_COOLDOWN = 10 # 10 секунд
+FISHING_COOLDOWN = 5 # 5 секунд
 
 def get_player_active_rod(stats):
     """Возвращает характеристики самой лучшей купленной удочки игрока."""
