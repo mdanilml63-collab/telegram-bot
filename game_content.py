@@ -930,6 +930,7 @@ FISHING_RODS = {
     'rod_08': {'name': "Эфирная Леска Создателя", 'level_req': 70, 'cost': 30000, 'stats': {'catch_chance': 80, 'valuable_catch_chance': 30, 'big_catch_chance': 30}},
     'rod_09': {'name': "Щупальце Древнего", 'level_req': 80, 'cost': 60000, 'stats': {'catch_chance': 85, 'valuable_catch_chance': 40, 'big_catch_chance': 35}},
     'rod_10': {'name': "Отражение Каландры", 'level_req': 90, 'cost': 125000, 'stats': {'catch_chance': 100, 'valuable_catch_chance': 50, 'big_catch_chance': 45}},
+    'rod_11': {'name': "Удочка из Пустоты", 'level_req': 100, 'cost': 250000, 'stats': {'catch_chance': 100, 'valuable_catch_chance': 70, 'big_catch_chance': 70}}
 }
 
 FISHING_STAT_PERKS = {
