@@ -958,7 +958,12 @@ FISHING_LOOT_TABLE = {
         'common': [ # 60% шанс
             {'name': 'Грязный ботинок', 'base_xp': 30, 'base_price': 1},
             {'name': 'Ржавая жестянка', 'base_xp': 30, 'base_price': 1},
-            {'name': 'Морской слизень', 'base_xp': 40, 'base_price': 1}, # было 2
+            {'name': 'Морской слизень', 'base_xp': 40, 'base_price': 3},
+            {'name': 'Мелкий пескарь', 'base_xp': 25, 'base_price': 3},
+            {'name': 'Водорослевый краб', 'base_xp': 35, 'base_price': 3},
+            {'name': 'Глиняный вьюн', 'base_xp': 28, 'base_price': 3},
+            {'name': 'Песчаный скат', 'base_xp': 32, 'base_price': 3},
+            {'name': 'Ряска-рыба', 'base_xp': 38, 'base_price': 2},
         ],
         'uncommon': [  # 25% шанс
             {'name': 'Прибрежный бычок', 'base_xp': 50, 'base_price': 2},
