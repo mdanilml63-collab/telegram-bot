@@ -1094,8 +1094,33 @@ FISHING_LOOT_TABLE = {
             {'name': 'Пространственный марлин', 'base_xp': 3200, 'base_price': 140},
         ],
         'rare': [
-            {'name': 'Сердце Пробудителя', 'base_xp': 4000, 'base_price': 250}, # было 400
-            {'name': 'Слеза Мейвен', 'base_xp': 4000, 'base_price': 300}, # было 500
+            {'name': 'Сердце Пробудителя', 'base_xp': 4000, 'base_price': 250},
+            {'name': 'Слеза Мейвен', 'base_xp': 4000, 'base_price': 300},
+            {'name': 'Глаз Бездны', 'base_xp': 4200, 'base_price': 280},
+            {'name': 'Дыхание Хаоса', 'base_xp': 4100, 'base_price': 260},
+            {'name': 'Крыло Феникса', 'base_xp': 4300, 'base_price': 310},
+            {'name': 'Зуб Дракона', 'base_xp': 4150, 'base_price': 290},
+            {'name': 'Чешуя Левиафана', 'base_xp': 4400, 'base_price': 330},
+        ]
+    },
+    'tier6': {  # Уровень 100+
+        'common': [  # 60% шанс
+            {'name': 'Призрачный скат', 'base_xp': 2500, 'base_price': 100},
+            {'name': 'Глубинная медуза', 'base_xp': 2600, 'base_price': 110},
+            {'name': 'Пелагическая сардина', 'base_xp': 2450, 'base_price': 95},
+            {'name': 'Теневой бычок', 'base_xp': 2700, 'base_price': 115},
+        ],
+        'uncommon': [  # 25% шанс
+            {'name': 'Астральный тунец', 'base_xp': 3800, 'base_price': 200},
+            {'name': 'Теневой марлин', 'base_xp': 4000, 'base_price': 220},
+            {'name': 'Лунный окунь', 'base_xp': 3900, 'base_price': 210},
+            {'name': 'Кобальтовая скумбрия', 'base_xp': 4100, 'base_price': 230},
+        ],
+        'rare': [  # 15% шанс
+            {'name': 'Первозданный левиафан', 'base_xp': 6000, 'base_price': 450},
+            {'name': 'Властелин бездны', 'base_xp': 6500, 'base_price': 500},
+            {'name': 'Изумрудный дракон', 'base_xp': 6200, 'base_price': 475},
+            {'name': 'Кристальный осьминог', 'base_xp': 6400, 'base_price': 490},
         ]
     }
 }
