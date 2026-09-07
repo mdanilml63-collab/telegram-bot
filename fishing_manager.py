@@ -118,6 +118,7 @@ def start_fishing(user_id):
     if level >= 40: available_tiers.append('tier3')
     if level >= 60: available_tiers.append('tier4')
     if level >= 80: available_tiers.append('tier5')
+    if level >= 90: available_tiers.append('tier6')
     
     chosen_tier_id = random.choices(available_tiers, weights=[i+1 for i in range(len(available_tiers))], k=1)[0]
     
