@@ -988,7 +988,7 @@ FISHING_LOOT_TABLE = {
             {'name': 'Грозовой угорь', 'base_xp': 700, 'base_price': 25},
         ]
     },
-    'tier3': { # Уровень 40+
+    'tier3': {  # Уровень 40+
         'common': [
             {'name': 'Горный голец', 'base_xp': 610, 'base_price': 12},
             {'name': 'Каменный краб', 'base_xp': 660, 'base_price': 12},
