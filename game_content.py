@@ -1004,7 +1004,6 @@ FISHING_LOOT_TABLE = {
             {'name': 'Рыба-лист', 'base_xp': 300, 'base_price': 9},
         ],
         'rare': [
-            {'name': 'Vaal-овый угорь', 'base_xp': 600, 'base_price': 15},
             {'name': 'Солнечный лещ', 'base_xp': 580, 'base_price': 20},
             {'name': 'Кровавая форель', 'base_xp': 620, 'base_price': 18},
             {'name': 'Небесный скат', 'base_xp': 640, 'base_price': 20},
