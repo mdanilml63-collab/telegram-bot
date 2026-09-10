@@ -62,8 +62,9 @@ def start_fishing(user_id):
     last_action_time = USER_ACTION_LOCK.get(f"fishing_{user_id}", 0)
     if time.time() - last_action_time < FISHING_COOLDOWN:
         return {'status': 'cooldown', 'wait_time': int(FISHING_COOLDOWN - (time.time() - last_action_time))}
-
+    USER_ACTION_LOCK[f"fishing_{user_id}"] = time.time()
     stats = db.get_fishing_stats(user_id)
+    
     
     # --- НАЧАЛО ИЗМЕНЕНИЙ: БЛОКИРОВКА НА ВРЕМЯ ЭКСПЕДИЦИИ ---
     if stats.get('expedition_end_time', 0) > time.time():
@@ -118,7 +119,6 @@ def start_fishing(user_id):
     if level >= 40: available_tiers.append('tier3')
     if level >= 60: available_tiers.append('tier4')
     if level >= 80: available_tiers.append('tier5')
-    if level >= 90: available_tiers.append('tier6')
     
     chosen_tier_id = random.choices(available_tiers, weights=[i+1 for i in range(len(available_tiers))], k=1)[0]
     

@@ -848,8 +848,6 @@ def _handle_victory(user_id, run_state, telegram_user: Update.effective_user, co
         char.setdefault('permanent_bonuses', {})
         if effective_stats.get('perm_hp_on_boss'):
             char['permanent_bonuses']['max_health'] = char['permanent_bonuses'].get('max_health', 0) + effective_stats['perm_hp_on_boss']
-        if effective_stats.get('perm_acc_on_boss'):
-            char['permanent_bonuses']['accuracy'] = char['permanent_bonuses'].get('accuracy', 0) + effective_stats['perm_acc_on_boss']
         if effective_stats.get('perm_es_on_boss'):
             char['permanent_bonuses']['max_energy_shield'] = char['permanent_bonuses'].get('max_energy_shield', 0) + effective_stats['perm_es_on_boss']
         if effective_stats.get('perm_def_on_boss'):

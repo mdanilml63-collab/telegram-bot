@@ -115,8 +115,8 @@ CLASS_DATA = {
         'name': "Мародер (Силач)",
         'desc': "Мастер грубой силы. Начинает с огромным запасом здоровья и повышенной атакой.",
         'stats': {
-            'health': 150, 'max_health': 150, 'energy_shield': 10, 'max_energy_shield': 10,
-            'attack': 15, 'crit_chance': 5, 'dodge_chance': 0, 'block_chance': 5, 'defense': 5,
+            'health': 165, 'max_health': 165, 'energy_shield': 10, 'max_energy_shield': 10,
+            'attack': 18, 'crit_chance': 5, 'dodge_chance': 0, 'block_chance': 5, 'defense': 8,
             'accuracy': 0, 'defense_penetration': 0, 'block_penetration': 0, 'double_damage_chance': 0, 'magic_find': 0,
             'es_leech_rate': 0, 'crit_damage_reduction': 0,
             # --- НОВАЯ ОСОБЕННОСТЬ ---
@@ -128,9 +128,9 @@ CLASS_DATA = {
         'desc': "Повелительница магии и энергощита. Конвертирует часть своего здоровья в дополнительный энергощит.",
         'stats': {
             'health': 70, 'max_health': 70, 'energy_shield': 60, 'max_energy_shield': 60,
-            'attack': 15, 'crit_chance': 10, 'dodge_chance': 5, 'block_chance': 0, 'defense': 0,
+            'attack': 15, 'crit_chance': 10, 'dodge_chance': 5, 'block_chance': 0, 'defense': 5,
             'accuracy': 0, 'defense_penetration': 0, 'block_penetration': 0, 'double_damage_chance': 0, 'magic_find': 0,
-            'es_leech_rate': 2, 'crit_damage_reduction': 0,
+            'es_leech_rate': 5, 'crit_damage_reduction': 0,
             # --- НОВАЯ ОСОБЕННОСТЬ ---
             'arcane_substitution': True  # <-- НОВЫЙ ФЛАГ
         }
@@ -140,9 +140,9 @@ CLASS_DATA = {
         'desc': "Неуловимый боец дальнего боя. Высокая точность и шанс уворота делают её сложной целью.",
         'stats': {
             'health': 90, 'max_health': 90, 'energy_shield': 15, 'max_energy_shield': 15,
-            'attack': 12, 'crit_chance': 5, 'dodge_chance': 12, 'block_chance': 5, 'defense': 0,
-            'accuracy': 30, 'defense_penetration': 0, 'block_penetration': 0, 'double_damage_chance': 0, 'magic_find': 0,
-            'es_leech_rate': 0, 'crit_damage_reduction': 0,
+            'attack': 12, 'crit_chance': 10, 'dodge_chance': 12, 'block_chance': 5, 'defense': 0,
+            'defense_penetration': 0, 'block_penetration': 0, 'double_damage_chance': 0, 'magic_find': 0,
+            'es_leech_rate': 0, 'crit_damage_reduction': 0, 'accuracy': 50,
             # --- НОВАЯ ОСОБЕННОСТЬ ---
             'cannot_be_dodged': True
             
@@ -153,8 +153,8 @@ CLASS_DATA = {
         'desc': "Искусный фехтовальщик, сочетающий атаку и защиту. Мастер блоков и вампиризма.",
         'stats': {
             'health': 100, 'max_health': 100, 'energy_shield': 5, 'max_energy_shield': 5,
-            'attack': 12, 'crit_chance': 3, 'dodge_chance': 2, 'block_chance': 6, 'defense': 5,
-            'accuracy': 5, 'defense_penetration': 0, 'block_penetration': 0, 'double_damage_chance': 0, 'magic_find': 0,
+            'attack': 12, 'crit_chance': 3, 'dodge_chance': 2, 'block_chance': 10, 'defense': 5,
+            'accuracy': 5, 'defense_penetration': 10, 'block_penetration': 0, 'double_damage_chance': 0, 'magic_find': 0,
             'es_leech_rate': 0, 'lifesteal': 2, 'crit_damage_reduction': 0,
             # --- НОВАЯ ОСОБЕННОСТЬ ---
             'cannot_be_blocked': True
@@ -178,11 +178,11 @@ CLASS_DATA = {
         'desc': "Коварный убийца, наносящий огромный критический урон. Выживает за счет уклонения от ударов.",
         'stats': {
             'health': 100, 'max_health': 100, 'energy_shield': 35, 'max_energy_shield': 35,
-            'attack': 15, 'crit_chance': 15, 'dodge_chance': 10, 'block_chance': 0, 'defense': 0,
+            'attack': 12, 'crit_chance': 15, 'dodge_chance': 10, 'block_chance': 0, 'defense': 0,
             'accuracy': 15, 'defense_penetration': 5, 'block_penetration': 0, 'double_damage_chance': 3, 'magic_find': 50,
-            'es_leech_rate': 5, 'crit_damage_reduction': 0,
+            'es_leech_rate': 0, 'crit_damage_reduction': 0,
             # --- НОВАЯ ОСОБЕННОСТЬ ---
-            'crit_pen': 50
+            'crit_pen': 40
             
         }
     },
@@ -920,7 +920,7 @@ CONTENT = {
 FISHING_XP_PER_LEVEL = [0] + [int(100 * (1.12 ** i)) for i in range(1, 201)]
 
 FISHING_RODS = {
-    'rod_01': {'name': "Ветвь с Побережья", 'level_req': 1, 'cost': 0, 'stats': {'catch_chance': 30, 'valuable_catch_chance': 1, 'big_catch_chance': 1}},
+    'rod_01': {'name': "Ветвь с Побережья", 'level_req': 1, 'cost': 0, 'stats': {'catch_chance': 40, 'valuable_catch_chance': 1, 'big_catch_chance': 1}},
     'rod_02': {'name': "Удочка из Костяного Шипа", 'level_req': 5, 'cost': 100, 'stats': {'catch_chance': 45, 'valuable_catch_chance': 8, 'big_catch_chance': 5}},
     'rod_03': {'name': "Коралловая Удочка Ваал", 'level_req': 10, 'cost': 650, 'stats': {'catch_chance': 55, 'valuable_catch_chance': 12, 'big_catch_chance': 8}},
     'rod_04': {'name': "Посох Вечного Рыбака", 'level_req': 20, 'cost': 1300, 'stats': {'catch_chance': 60, 'valuable_catch_chance': 15, 'big_catch_chance': 10}},
@@ -954,172 +954,78 @@ FISHING_BAITS = {
 }
 
 FISHING_LOOT_TABLE = {
-    'tier1': {  # Уровень 0+
-        'common': [  # 60% шанс
+    'tier1': { # Уровень 0+
+        'common': [ # 60% шанс
             {'name': 'Грязный ботинок', 'base_xp': 30, 'base_price': 1},
             {'name': 'Ржавая жестянка', 'base_xp': 30, 'base_price': 1},
-            {'name': 'Морской слизень', 'base_xp': 40, 'base_price': 3},
-            {'name': 'Мелкий пескарь', 'base_xp': 25, 'base_price': 3},
-            {'name': 'Водорослевый краб', 'base_xp': 35, 'base_price': 3},
-            {'name': 'Глиняный вьюн', 'base_xp': 28, 'base_price': 3},
-            {'name': 'Песчаный скат', 'base_xp': 32, 'base_price': 3},
-            {'name': 'Ряска-рыба', 'base_xp': 38, 'base_price': 2},
+            {'name': 'Морской слизень', 'base_xp': 40, 'base_price': 1}, # было 2
         ],
-        'uncommon': [  # 25% шанс
-            {'name': 'Прибрежный бычок', 'base_xp': 50, 'base_price': 2},
-            {'name': 'Пещерный рак', 'base_xp': 55, 'base_price': 2},
-            {'name': 'Тростниковая щука', 'base_xp': 60, 'base_price': 3},
-            {'name': 'Каменный окунь', 'base_xp': 65, 'base_price': 3},
-            {'name': 'Илистый угорь', 'base_xp': 70, 'base_price': 3},
-            {'name': 'Ракушечный карп', 'base_xp': 58, 'base_price': 2},
-            {'name': 'Болотная черепаха', 'base_xp': 75, 'base_price': 4},
+        'uncommon': [ # 25% шанс
+            {'name': 'Прибрежный бычок', 'base_xp': 50, 'base_price': 2}, # было 3
+            {'name': 'Пещерный рак', 'base_xp': 55, 'base_price': 2}, # было 4
         ],
-        'rare': [  # 15% шанс
-            {'name': 'Карп Роа', 'base_xp': 120, 'base_price': 3},
-            {'name': 'Призрачная креветка', 'base_xp': 150, 'base_price': 4},
-            {'name': 'Золотой карась', 'base_xp': 130, 'base_price': 5},
-            {'name': 'Жемчужная мидия', 'base_xp': 140, 'base_price': 4},
-            {'name': 'Алмазный голец', 'base_xp': 160, 'base_price': 5},
-            {'name': 'Бронзовый сом', 'base_xp': 135, 'base_price': 4},
-            {'name': 'Лунный окунь-кроха', 'base_xp': 170, 'base_price': 6},
+        'rare': [ # 15% шанс
+            {'name': 'Карп Роа', 'base_xp': 120, 'base_price': 3}, # было 5
+            {'name': 'Призрачная креветка', 'base_xp': 150, 'base_price': 4}, # было 6
         ]
     },
-    'tier2': {  # Уровень 20+
+    'tier2': { # Уровень 20+
         'common': [
-            {'name': 'Сарнская плотва', 'base_xp': 150, 'base_price': 3},
-            {'name': 'Канальный сом', 'base_xp': 170, 'base_price': 3},
-            {'name': 'Речная форель', 'base_xp': 160, 'base_price': 4},
-            {'name': 'Озёрная ряпушка', 'base_xp': 155, 'base_price': 3},
-            {'name': 'Песчаный лещ', 'base_xp': 180, 'base_price': 4},
-            {'name': 'Тенистый сиг', 'base_xp': 165, 'base_price': 4},
-            {'name': 'Белый амур', 'base_xp': 175, 'base_price': 3},
+            {'name': 'Сарнская плотва', 'base_xp': 150, 'base_price': 3}, # было 5
+            {'name': 'Канальный сом', 'base_xp': 170, 'base_price': 3}, # было 5
         ],
         'uncommon': [
-            {'name': 'Черный страж', 'base_xp': 240, 'base_price': 6},
-            {'name': 'Самоцветный окунь', 'base_xp': 260, 'base_price': 6},
-            {'name': 'Королевский лосось', 'base_xp': 280, 'base_price': 8},
-            {'name': 'Изумрудный карп', 'base_xp': 250, 'base_price': 7},
-            {'name': 'Полосатый тунец', 'base_xp': 290, 'base_price': 8},
-            {'name': 'Жемчужная скумбрия', 'base_xp': 270, 'base_price': 7},
-            {'name': 'Рыба-лист', 'base_xp': 300, 'base_price': 9},
+            {'name': 'Черный страж', 'base_xp': 240, 'base_price': 6}, # было 8
+            {'name': 'Самоцветный окунь', 'base_xp': 260, 'base_price': 6}, # было 9
         ],
         'rare': [
-            {'name': 'Солнечный лещ', 'base_xp': 580, 'base_price': 20},
-            {'name': 'Кровавая форель', 'base_xp': 620, 'base_price': 18},
-            {'name': 'Небесный скат', 'base_xp': 640, 'base_price': 20},
-            {'name': 'Огненный окунь', 'base_xp': 660, 'base_price': 22},
-            {'name': 'Ледяная щука', 'base_xp': 590, 'base_price': 17},
-            {'name': 'Грозовой угорь', 'base_xp': 700, 'base_price': 25},
+            {'name': 'Vaal-овый угорь', 'base_xp': 600, 'base_price': 15}, # было 20
+            {'name': 'Солнечный лещ', 'base_xp': 580, 'base_price': 20}, # было 35
         ]
     },
-    'tier3': {  # Уровень 40+
+    'tier3': { # Уровень 40+
         'common': [
-            {'name': 'Горный голец', 'base_xp': 610, 'base_price': 12},
-            {'name': 'Каменный краб', 'base_xp': 660, 'base_price': 12},
-            {'name': 'Глубинный окунь', 'base_xp': 630, 'base_price': 13},
-            {'name': 'Скальный морской ерш', 'base_xp': 650, 'base_price': 13},
-            {'name': 'Пещера рыба-капля', 'base_xp': 680, 'base_price': 14},
-            {'name': 'Вулканический бычок', 'base_xp': 640, 'base_price': 12},
-            {'name': 'Черный палтус', 'base_xp': 700, 'base_price': 15},
+            {'name': 'Горный голец', 'base_xp': 610, 'base_price': 12}, # было 20
+            {'name': 'Каменный краб', 'base_xp': 660, 'base_price': 12}, # было 20
         ],
         'uncommon': [
-            {'name': 'Боевая рыба Тукохамы', 'base_xp': 920, 'base_price': 20},
-            {'name': 'Кровавый карп Китавы', 'base_xp': 1020, 'base_price': 20},
-            {'name': 'Изумрудный марлин', 'base_xp': 950, 'base_price': 22},
-            {'name': 'Теневой окунь', 'base_xp': 980, 'base_price': 23},
-            {'name': 'Радужная форель', 'base_xp': 1050, 'base_price': 25},
-            {'name': 'Сапфировый тунец', 'base_xp': 1000, 'base_price': 22},
-            {'name': 'Янтарный скат', 'base_xp': 1100, 'base_price': 28},
+            {'name': 'Боевая рыба Тукохамы', 'base_xp': 920, 'base_price': 20}, # было 30
+            {'name': 'Кровавый карп Китавы', 'base_xp': 1020, 'base_price': 20}, # было 30
         ],
         'rare': [
-            {'name': 'Огненный лосось Невинности', 'base_xp': 1800, 'base_price': 35},
-            {'name': 'Сумрачный тунец', 'base_xp': 1950, 'base_price': 35},
-            {'name': 'Драконий морской конек', 'base_xp': 1850, 'base_price': 40},
-            {'name': 'Фантомная акула', 'base_xp': 2000, 'base_price': 42},
-            {'name': 'Золотая мурена', 'base_xp': 1900, 'base_price': 38},
-            {'name': 'Кристальный скат', 'base_xp': 2050, 'base_price': 45},
-            {'name': 'Пламенный окунь', 'base_xp': 2100, 'base_price': 48},
+            {'name': 'Огненный лосось Невинности', 'base_xp': 1800, 'base_price': 35}, # было 50
+            {'name': 'Сумрачный тунец', 'base_xp': 1950, 'base_price': 35}, # было 50
         ]
     },
-    'tier4': {  # Уровень 60+
+    'tier4': { # Уровень 60+
         'common': [
-            {'name': 'Атласная треска', 'base_xp': 1300, 'base_price': 30},
-            {'name': 'Пустотная пикша', 'base_xp': 1400, 'base_price': 30},
-            {'name': 'Глубинная камбала', 'base_xp': 1350, 'base_price': 32},
-            {'name': 'Темный палтус', 'base_xp': 1450, 'base_price': 33},
-            {'name': 'Холодный морской окунь', 'base_xp': 1380, 'base_price': 31},
-            {'name': 'Ледяная треска', 'base_xp': 1420, 'base_price': 32},
-            {'name': 'Полярная пикша', 'base_xp': 1500, 'base_price': 35},
+            {'name': 'Атласная треска', 'base_xp': 1300, 'base_price': 30}, # было 50
+            {'name': 'Пустотная пикша', 'base_xp': 1400, 'base_price': 30}, # было 50
         ],
         'uncommon': [
-            {'name': 'Рыба-гидра', 'base_xp': 1500, 'base_price': 50},
-            {'name': 'Феникс-рыба', 'base_xp': 1620, 'base_price': 50},
-            {'name': 'Теневой лосось', 'base_xp': 1550, 'base_price': 55},
-            {'name': 'Кровавый тунец', 'base_xp': 1600, 'base_price': 52},
-            {'name': 'Эфирный скат', 'base_xp': 1650, 'base_price': 58},
-            {'name': 'Астральный окунь', 'base_xp': 1580, 'base_price': 53},
-            {'name': 'Древний осетр', 'base_xp': 1700, 'base_price': 60},
+            {'name': 'Рыба-гидра', 'base_xp': 1500, 'base_price': 50}, # было 70
+            {'name': 'Феникс-рыба', 'base_xp': 1620, 'base_price': 50}, # было 70
         ],
         'rare': [
-            {'name': 'Рыба-химера', 'base_xp': 2020, 'base_price': 80},
-            {'name': 'Рыба-минотавр', 'base_xp': 2040, 'base_price': 80},
-            {'name': 'Грифон-рыба', 'base_xp': 2100, 'base_price': 85},
-            {'name': 'Кракен-младший', 'base_xp': 2150, 'base_price': 90},
-            {'name': 'Василиск-рыба', 'base_xp': 2080, 'base_price': 82},
-            {'name': 'Феникс-акула', 'base_xp': 2200, 'base_price': 95},
-            {'name': 'Легендарный морской змей', 'base_xp': 2250, 'base_price': 100},
+            {'name': 'Рыба-химера', 'base_xp': 2020, 'base_price': 80}, # было 120
+            {'name': 'Рыба-минотавр', 'base_xp': 2040, 'base_price': 80}, # было 120
         ],
         'special': [
             {'name': 'Затонувший сундук', 'type': 'treasure_chest'}
         ]
     },
-    'tier5': {  # Уровень 80+
+    'tier5': { # Уровень 80+
         'common': [
-            {'name': 'Осколок грез', 'base_xp': 1850, 'base_price': 60},
-            {'name': 'Эхо бездны', 'base_xp': 1900, 'base_price': 70},
-            {'name': 'Теневой сом', 'base_xp': 1880, 'base_price': 65},
-            {'name': 'Призрачная форель', 'base_xp': 1950, 'base_price': 72},
-            {'name': 'Космический окунь', 'base_xp': 1920, 'base_price': 68},
-            {'name': 'Астральная плотва', 'base_xp': 1980, 'base_price': 75},
-            {'name': 'Галактический лещ', 'base_xp': 2000, 'base_price': 78},
+            {'name': 'Осколок грез', 'base_xp': 1850, 'base_price': 60}, # было 100
+            {'name': 'Эхо бездны', 'base_xp': 1900, 'base_price': 70}, # было 120
         ],
         'uncommon': [
-            {'name': 'Космический скат Создателя', 'base_xp': 950, 'base_price': 120},
-            {'name': 'Кристалл Древнего', 'base_xp': 3000, 'base_price': 120},
-            {'name': 'Первозданный тунец', 'base_xp': 2800, 'base_price': 130},
-            {'name': 'Древний осетр-долгожитель', 'base_xp': 2900, 'base_price': 125},
-            {'name': 'Звездный скат', 'base_xp': 3100, 'base_price': 135},
-            {'name': 'Временной угорь', 'base_xp': 2850, 'base_price': 128},
-            {'name': 'Пространственный марлин', 'base_xp': 3200, 'base_price': 140},
+            {'name': 'Космический скат Создателя', 'base_xp': 950, 'base_price': 120}, # было 200
+            {'name': 'Кристалл Древнего', 'base_xp': 3000, 'base_price': 120}, # было 200
         ],
         'rare': [
-            {'name': 'Сердце Пробудителя', 'base_xp': 4000, 'base_price': 250},
-            {'name': 'Слеза Мейвен', 'base_xp': 4000, 'base_price': 300},
-            {'name': 'Глаз Бездны', 'base_xp': 4200, 'base_price': 280},
-            {'name': 'Дыхание Хаоса', 'base_xp': 4100, 'base_price': 260},
-            {'name': 'Крыло Феникса', 'base_xp': 4300, 'base_price': 310},
-            {'name': 'Зуб Дракона', 'base_xp': 4150, 'base_price': 290},
-            {'name': 'Чешуя Левиафана', 'base_xp': 4400, 'base_price': 330},
-        ]
-    },
-    'tier6': {  # Уровень 100+
-        'common': [  # 60% шанс
-            {'name': 'Призрачный скат', 'base_xp': 2500, 'base_price': 100},
-            {'name': 'Глубинная медуза', 'base_xp': 2600, 'base_price': 110},
-            {'name': 'Пелагическая сардина', 'base_xp': 2450, 'base_price': 95},
-            {'name': 'Теневой бычок', 'base_xp': 2700, 'base_price': 115},
-        ],
-        'uncommon': [  # 25% шанс
-            {'name': 'Астральный тунец', 'base_xp': 3800, 'base_price': 200},
-            {'name': 'Теневой марлин', 'base_xp': 4000, 'base_price': 220},
-            {'name': 'Лунный окунь', 'base_xp': 3900, 'base_price': 210},
-            {'name': 'Кобальтовая скумбрия', 'base_xp': 4100, 'base_price': 230},
-        ],
-        'rare': [  # 15% шанс
-            {'name': 'Первозданный левиафан', 'base_xp': 6000, 'base_price': 450},
-            {'name': 'Властелин бездны', 'base_xp': 6500, 'base_price': 500},
-            {'name': 'Изумрудный дракон', 'base_xp': 6200, 'base_price': 475},
-            {'name': 'Кристальный осьминог', 'base_xp': 6400, 'base_price': 490},
+            {'name': 'Сердце Пробудителя', 'base_xp': 4000, 'base_price': 250}, # было 400
+            {'name': 'Слеза Мейвен', 'base_xp': 4000, 'base_price': 300}, # было 500
         ]
     }
 }
@@ -1395,7 +1301,7 @@ PASSIVE_SKILL_TREE = {
     'asc_hybrid1': {'name': "Равновесие", 'desc': "+10 к здоровью, +10 к энергощиту.", 'branch': "asc", 'sub_branch': 'core', 'effects': {'max_health': 10, 'max_energy_shield': 10}, 'requires': 'asc_start'},
     'asc_hybrid2': {'name': "Смертоносная точность", 'desc': "+2 к атаке, +2% к шансу крит. удара.", 'branch': "asc", 'sub_branch': 'core', 'effects': {'attack': 2, 'crit_chance': 2}, 'requires': 'asc_hybrid1'},
     'asc_hybrid3': {'name': "Гибкая защита", 'desc': "+1% к увороту, +1% к блоку.", 'branch': "asc", 'sub_branch': 'core', 'effects': {'dodge_chance': 1, 'block_chance': 1}, 'requires': 'asc_hybrid2'},
-    'asc_hybrid4': {'name': "Проницательность", 'desc': "+4% к пробитию, +8 к точности.", 'branch': "asc", 'sub_branch': 'core', 'effects': {'defense_penetration': 4, 'accuracy': 8}, 'requires': 'asc_hybrid3'},
+    'asc_hybrid4': {'name': "Проницательность", 'desc': "+4% к пробитию брони, +8 к точности.", 'branch': "asc", 'sub_branch': 'core', 'effects': {'defense_penetration': 4, 'accuracy': 8}, 'requires': 'asc_hybrid3'},
 
     # --- Под-ветвь Искателя (Удача и Предметы) ---
     'asc_path_seeker_entry': {'name': "Путь Искателя", 'desc': "+10% к поиску магических предметов.", 'branch': "asc", 'sub_branch': 'seeker', 'effects': {'magic_find': 10}, 'requires': 'asc_hybrid4'},
@@ -1431,8 +1337,7 @@ ASCENDANCY_PASSIVES = {
     'ranger': {
         'rapid_assault': {'name': "Стремительный Натиск", 'desc': "+8% к шансу двойного урона.", 'effects': {'double_damage_chance': 8}},
         'acrobatics': {'name': "Акробатика", 'desc': "+13% к шансу уворота.", 'effects': {'dodge_chance': 13}},
-        'ricochet': {'name': "Смертоносный прицел", 'desc': "После победы над боссом вы получаете +10 к точности. Этот бонус сохраняется до конца забега и суммируется.", 'effects': {'perm_acc_on_boss': 10}},
-        'farsight': {'name': "Дальнозоркость", 'desc': "+7% к шансу крит. удара и +50 к точности.", 'effects': {'crit_chance': 7, 'accuracy': 50}},
+        'farsight': {'name': "Дальнозоркость", 'desc': "+7% к шансу крит. удара и +5% к увороту.", 'effects': {'crit_chance': 7, 'dodge_chance': 5}},
         'nature_s_bounty': {'name': "Дар Природы", 'desc': "После победы над боссом вы получаете дополнительный выбор из 2 предметов.", 'effects': {'extra_loot_choice_on_boss': 2}},
         'wind_dancer': {'name': "Танцующая с ветром", 'desc': "Если вас не ранили в прошлом ходу, вы получаете +20% к увороту.", 'effects': {'conditional_dodge': 20}},
         'focal_point': {'name': "Точка Фокусировки", 'desc': "Увеличивает эффект бонусов от комплектов на 50%.", 'effects': {'amplify_set_bonuses': 1.5}},

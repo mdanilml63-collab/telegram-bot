@@ -80,6 +80,10 @@ def start_pvp_run(user_id):
         return {'text': "🛡️ *Доступ закрыт\\!*\\n\\nЧтобы войти в режим PVP, вы должны сначала одержать победу в PVE\\-режиме\\.", 'buttons': [[{'text': '⬅️ В главное меню', 'callback_data': 'back_to_main_menu'}]]}
     return ui.create_class_selection_ui(run_type='pvp')
 
+def start_endgame_maps(user_id):
+    return {
+        'text': "Будет добавлено в следующей лиге", 'buttons': [[{'text': '⬅️ В главное меню', 'callback_data': 'back_to_main_menu'}]]}
+
 def start_hc_pvp_run(user_id):
     """Инициирует выбор класса для Хардкорного PVP забега."""
     # Хардкор доступен сразу, проверка на PVE победу не нужна.
@@ -345,8 +349,8 @@ def continue_run(user_id):
         is_endless_run = char.get('run_type') == 'endless'
         
         if run_state['floor'] == 4 and not is_endless_run:
-            db.end_pve_run(user_id, is_win=True, xp_reward=500)
-            return {'text': "🏆 *ПОЗДРАВЛЯЕМ\\!* Вы прошли все этажи и одержали великую победу\\! В качестве награды вы получаете *2 💎 Divine Orb* и *500* опыта\\.", 'buttons': [[{'text': 'В главное меню', 'callback_data': 'back_to_main_menu'}]]}
+            db.end_pve_run(user_id, is_win=True, xp_reward=750)
+            return {'text': "🏆 *ПОЗДРАВЛЯЕМ\\!* Вы прошли все этажи и одержали великую победу\\! В качестве награды вы получаете *3 💎 Divine Orb* и *750* опыта\\.", 'buttons': [[{'text': 'В главное меню', 'callback_data': 'back_to_main_menu'}]]}
         else:
             run_state['floor'] += 1
             if is_endless_run and run_state['floor'] > 4:

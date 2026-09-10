@@ -38,12 +38,14 @@ def generate_main_menu_keyboard(user_id):
         [InlineKeyboardButton("☠️ Хардкор PVP", callback_data='menu_hc_pvp')],
         [InlineKeyboardButton("🏆 Таблицы Лидеров", callback_data='menu_leaderboard'), InlineKeyboardButton("📊 Моя статистика", callback_data='menu_my_stats')],
         [InlineKeyboardButton("🎯 Ежедневные Задания", callback_data='menu_quests'), InlineKeyboardButton("👹 Ивенты", callback_data='menu_events')],
+        [InlineKeyboardButton("🌍 Карты", callback_data='endgame_maps')],
         # ИЗМЕНЕНИЕ ЗДЕСЬ
         [InlineKeyboardButton("🛠️ Прокачка и Обмен", callback_data='menu_upgrades_exchange')],
         [InlineKeyboardButton("🤝 Пригласить друга", callback_data='menu_referral')], 
         [InlineKeyboardButton("💎 Магазин MTX", callback_data='menu_mtx_shop')],
         [InlineKeyboardButton("❓ Помощь", callback_data='menu_help')]
-    ]
+               ]
+
     return InlineKeyboardMarkup(keyboard)
 
 async def handle_buy_perk(query: Update.callback_query, context: ContextTypes.DEFAULT_TYPE):
@@ -257,6 +259,7 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if data == 'back_to_main_menu': await show_main_menu(query, context)
         elif data == 'menu_pve': result = gm.start_pve_run(user_id)
         elif data == 'menu_pvp': result = gm.start_pvp_run(user_id)
+        elif data == 'endgame_maps': result = gm.start_endgame_maps(user_id)
         elif data == 'menu_leaderboard': await query.edit_message_text(text="🏆 *Таблицы Лидеров*", reply_markup=generate_leaderboard_keyboard(), parse_mode=ParseMode.MARKDOWN_V2)
         elif data == 'leaderboard_pve': result = {'text': format_leaderboard(db.get_pve_leaderboard_with_ids(), "Топ PVE Игроков"), 'buttons': generate_leaderboard_keyboard().inline_keyboard}
         elif data == 'leaderboard_pvp': result = {'text': format_leaderboard(db.get_pvp_leaderboard_with_ids(), "Топ PVP Игроков"), 'buttons': generate_leaderboard_keyboard().inline_keyboard}
@@ -643,7 +646,7 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         elif data == 'reset_skills_confirm':
             text = (
                 "⚠️ *Подтверждение Сброса* ⚠️\n\n"
-                "Вы уверены, что хотите сбросить все изученные пассивные умения за *10 💎 Divine Orbs*?\n\n"
+                "Вы уверены, что хотите сбросить все изученные пассивные умения за *2 💎 Divine Orbs*?\n\n"
                 "Все ваши очки умений будут возвращены\\. Это действие необратимо\\."
             )
             buttons = [
